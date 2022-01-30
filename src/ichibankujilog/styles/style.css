@@ -1,0 +1,55 @@
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+  background-color:#FFFFFF;/*ページの色変更*/
+}
+
+body {
+  width:600px;
+  margin: 30px auto;/*上下の辺の間隔　autoは残った水平方向の余白を左右均等に配分する*/
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;/*コンテンツ周りのスペース上右下左の順*/
+  border: 5px solid black;/*境界の太さ*/
+}
+
+/*p,li,h1{
+  color:red;
+}*/
+
+/*p {
+  color: red;
+  height:50px;
+  border: 1px solid black;
+}*/
+
+/*フォントサイズの定義*/
+h1{
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;/*水平、垂直オフセット、ぼかす半径、影の基本色*/
+}
+h2,h3,h4{
+  font-size: 30px;
+  text-align: center;
+}
+
+p,li{
+  font-size:20px;
+  line-height:2;/*行間の幅*/
+  letter-spacing:1px;/*文字同士の幅*/
+}
+
+p.updating-date{  /*クラスセレクタ*/
+  color:blue;
+}
+
+img[src="images/hero_image_test1.jpg"]{/*属性セレクタ*/
+  /*画像のセンタリング*/
+  display: block;/*画像はインライン要素のため、マージンやその他の余白の値が適用できないため、blockを用いて画像にブロックレベルの動作を指定する必要がある*/
+  margin: 0 auto;
+  height: 50%;
+  width:50%;
+}
