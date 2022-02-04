@@ -46,10 +46,24 @@ p.updating-date{  /*クラスセレクタ*/
   color:blue;
 }
 
-img[src="images/hero_image_test1.jpg"]{/*属性セレクタ*/
+img{/*属性セレクタ*/
   /*画像のセンタリング*/
   display: block;/*画像はインライン要素のため、マージンやその他の余白の値が適用できないため、blockを用いて画像にブロックレベルの動作を指定する必要がある*/
   margin: 0 auto;
+  height: 60%;
+  width:60%;
+}
+
+
+.content{
+  display: flex;
+}
+
+/*
+img[src="images/hero_image_test1.jpg"]{/*属性セレクタ
+  /*画像のセンタリング
+  display: block;/*画像はインライン要素のため、マージンやその他の余白の値が適用できないため、blockを用いて画像にブロックレベルの動作を指定する必要がある
+  margin: 0 auto;
   height: 50%;
   width:50%;
-}
+}*/
